@@ -1,9 +1,9 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
-from chat import send_chat
+from chat import darisana
 
 sched = BlockingScheduler()
 
 # Schedule job_function to be called every two hours
-sched.add_job(send_chat, 'interval', seconds=10)
+sched.add_job(darisana, 'interval', seconds=10)
 
 sched.start()
